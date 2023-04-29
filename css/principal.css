@@ -1,0 +1,218 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* reset da modelo */
+.topo {
+	height: 125px;
+}
+.banners {
+	padding-bottom: 16px;
+}
+.titulos, .conteudos-navegacao {
+	display: none;
+	visibility: hidden;
+}
+.conteudos {
+	background: transparent;
+	box-shadow: none;
+}
+/* banners */
+.banners-nav-container {
+	left: 0;
+	margin: 0 auto;
+	max-width: 2000px;
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	z-index: 15;
+}
+.banners-nav {
+	margin: 0 auto;
+	max-width: 1110px;
+	width: 100%;
+}
+@media screen and (max-width: 1169px) {
+.banners-nav {
+	padding: 0 2%;
+}
+}
+.banners-nav-esq, .banners-nav-dir {
+	display: block;
+	height: 46px;
+	width: 25px;
+}
+.banners-nav-esq {
+	background: url(../img/nav-esq.svg) no-repeat left top;
+	background-size: contain;
+	float: left;
+}
+.banners-nav-dir {
+	background: url(../img/nav-dir.svg) no-repeat left top;
+	background-size: contain;
+	float: right;
+}
+/* fique por dentro */
+.noticias-container {
+	display: inline-block;
+	float: left;
+	margin-right: 5.8%;
+	max-width: 688px;
+	width: 100%;
+}
+.noticias-cabecalho {
+	margin-bottom: 25px;
+	width: 100%;
+}
+.noticias-cabecalho h2 {
+	background: url(../img/titulos-fundo.png) no-repeat left top;
+	color: #3d2317;
+	display: inline-block;
+	font-family: 'stag_sans_semiboldsemibold';
+	font-size: 3.5rem;
+	height: 100%;
+	letter-spacing: -.05rem;
+	line-height: 3rem;
+	margin: 0;
+	max-height: 107px;
+	max-width: 484px;
+	padding: 26px 18px 49px 18px;
+	position: relative;
+	text-align: center;
+	text-shadow: 0.5px 0.866px 1px rgba(0, 0, 0, 0.09);
+	width: 100%;
+	z-index: 10;
+}
+.noticias-botao {
+	float: right;
+	margin-top: 25px;
+	max-width: 37px;
+}
+.noticia {
+	background: #f7f7f7;
+	box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.051);
+	display: inline-block;
+	float: left;
+	max-width: 341px;
+	width: 100%;
+}
+.noticia-colher {
+	background: -moz-linear-gradient( 90deg, rgb(203,170,6) 0%, rgb(251,207,7) 100%);
+	background: -webkit-linear-gradient( 90deg, rgb(203,170,6) 0%, rgb(251,207,7) 100%);
+	background: -ms-linear-gradient( 90deg, rgb(203,170,6) 0%, rgb(251,207,7) 100%);
+	box-shadow: 0.5px 0.866px 1px 0px rgba(0, 0, 0, 0.063);
+	display: inline-block;
+	float: left;
+	height: 100rem;
+	max-height: 208px;
+	max-width: 56px;
+	position: relative;
+	width: 100%;
+	z-index: 9;
+}
+.noticia-colher:after {
+	background: url(../img/icone-colher.svg) no-repeat center center;
+	background-size: 32px 134px;
+	content: "";
+	height: 100rem;
+	left: 0;
+	max-height: 208px;
+	max-width: 56px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.noticia-container {
+	display: inline-block;
+	float: left;
+	padding: 16px;
+	width: 82.5%;
+}
+.noticia-img {
+	border: solid 1px #3b1b02;
+	box-shadow: 1px 1.732px 2px 0px rgba(0, 0, 0, 0.137);
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 5px;
+}
+.noticia a {
+	color: #3b1b02;
+	font-family: 'stag_sans_bookbook';
+	font-size: 1.2rem;
+	line-height: 1.8rem;
+	text-align: justify;
+}
+/* mapa */
+.mapa {
+	display: inline-block;
+	float: left;
+	max-width: 370px;
+	width: 100%;
+}
+@media screen and (max-width: 1186px) {
+.noticias-container {
+	margin-right: 2%;
+}
+}
+@media screen and (max-width: 1141px) {
+.noticias-container, .mapa {
+	display: block;
+	float: none;
+	margin: 0 auto;
+}
+.mapa {
+	float: left;
+	margin-bottom: 35px;
+	margin-top: 35px;
+	max-width: 1131px;
+	text-align: center;
+}
+.mapa-img {
+	max-width: 260px;
+	width: 100%;
+}
+}
+@media screen and (max-width: 1072px) and (min-width: 768px) {
+.topo {
+	height: 83px;
+}
+}
+@media screen and (max-width: 944px) and (min-width: 768px) {
+.topo {
+	height: 143px;
+}
+}
+@media screen and (max-width: 767px) and (min-width: 176px) {
+.banners {
+	margin-top: 72px;
+}
+@media screen and (max-width: 727px) {
+.noticia {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 25px;
+	max-width: 717px;
+}
+.noticia-img {
+	margin-left: 0;
+	max-width: 239px;
+	width: 100%;
+}
+}
+@media screen and (max-width: 559px) {
+.noticias-cabecalho h2 {
+	background-size: contain;
+	font-size: 2rem;
+	max-width: 250px;
+	padding: 7px 18px 20px 18px;
+	z-index: 10;
+}
+.noticias-botao {
+	margin-top: 5px;
+}
+}
+@media screen and (max-width: 350px) {
+.noticia-container {
+	padding: 10px;
+	width: 80%;
+}
+}
